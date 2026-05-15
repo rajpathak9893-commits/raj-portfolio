@@ -1,1 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Raj Pathak | Python & Django Developer</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+</head>
+<body>
 
+  <!-- LOADER -->
+  <div class="loader" id="loader">
+    <div class="loader-text">raj<span>.</span>dev</div>
+  </div>
+
+  <!-- CURSOR -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-follower" id="cursor-follower"></div>
+
+  <!-- NAV -->
+  <nav class="nav" id="nav">
+    <div class="nav-logo">RP<span class="dot">.</span></div>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#contact" class="nav-cta">Hire Me</a></li>
+    </ul>
+    <div class="hamburger" id="hamburger">
+      <span></span><span></span><span></span>
+    </div>
+  </nav>
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" id="mobileMenu">
+    <ul>
+      <li><a href="#about" onclick="closeMobileMenu()">About</a></li>
+      <li><a href="#skills" onclick="closeMobileMenu()">Skills</a></li>
+      <li><a href="#projects" onclick="closeMobileMenu()">Projects</a></li>
+      <li><a href="#experience" onclick="closeMobileMenu()">Experience</a></li>
+      <li><a href="#contact" onclick="closeMobileMenu()">Hire Me</a></li>
+    </ul>
+  </div>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="hero-bg">
+      <div class="grid-overlay"></div>
+      <div class="blob blob-1"></div>
+      <div class="blob blob-2"></div>
+    </div>
+    <div class="hero-content">
+      <div class="hero-tag animate-in" style="--delay:0.2s">
+        <span class="tag-dot"></span> Open to Work
+      </div>
+      <h1 class="hero-name animate-in" style="--delay:0.4s">
+        Raj<br><span class="outline-text">Pathak</span>
+      </h1>
+      <div class="hero-roles animate-in" style="--delay:0.6s">
+        <span id="role-text">Python Developer</span>
+        <span class="cursor-blink">|</span>
+      </div>
+      <p class="hero-desc animate-in" style="--delay:0.8s">
+        Building fast, scalable web apps with <strong>Django</strong>, <strong>PHP</strong>, and <strong>REST APIs</strong>. Turning ideas into deployed products.
+      </p>
+      <div class="hero-btns animate-in" style="--delay:1s">
+        <a href="#projects" class="btn btn-primary">See My Work <i class="fa fa-arrow-down"></i></a>
+        <a href="#contact" class="btn btn-outline">Let's Talk</a>
+      </div>
+      <div class="hero-stats animate-in" style="--delay:1.2s">
+        <div class="stat"><span class="stat-num">1+</span><span class="stat-label">Year Exp</span></div>
+        <div class="stat-divider"></div>
+        <div class="stat"><span class="stat-num">5+</span><span class="stat-label">Projects</span></div>
+        <div class="stat-divider"></div>
+        <div class="stat"><span class="stat-num">10+</span><span class="stat-label">Skills</span></div>
+      </div>
+    </div>
+    <div class="hero-visual animate-in" style="--delay:0.6s">
+      <div class="code-card">
+        <div class="code-header">
+          <span class="dot red"></span>
+          <span class="dot yellow"></span>
+          <span class="dot green"></span>
+          <span class="code-title">raj_pathak.py</span>
+        </div>
+        <pre class="code-body"><code><span class="c-keyword">class</span> <span class="c-class">RajPathak</span>:
+  role = <span class="c-str">"Web Developer"</span>
+  location = <span class="c-str">"Guna, MP"</span>
+  
+  skills = [
+    <span class="c-str">"Python"</span>, <span class="c-str">"Django"</span>,
+    <span class="c-str">"PHP"</span>, <span class="c-str">"MySQL"</span>,
+    <span class="c-str">"REST API"</span>, <span class="c-str">"JS"</span>
+  ]
+
+  <span class="c-keyword">def</span> <span class="c-fn">build</span>(self, idea):
+    <span class="c-keyword">return</span> idea.<span class="c-fn">deploy</span>()
+  
+  status = <span class="c-str">"Open to Work ✓"</span></code></pre>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <div class="scroll-line"></div>
+      <span>Scroll</span>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about section" id="about">
+    <div class="container">
+      <div class="section-label">01 / About</div>
+      <div class="about-grid">
+        <div class="about-left">
+          <h2 class="section-title">Who <span class="accent">I Am</span></h2>
+          <p class="about-text">
+            I'm a motivated Web Developer from <strong>Guna, Madhya Pradesh</strong> with 1 year of hands-on experience building real-world web applications. I specialize in full-stack development using Python/Django on the backend and modern HTML/CSS/JS on the frontend.
+          </p>
+          <p class="about-text">
+            I've built e-commerce platforms, job portals, API-integrated apps, and admin panels — all deployed and live. Currently pursuing B.Sc. Computer Science while working on exciting projects.
+          </p>
+          <div class="about-details">
+            <div class="detail-item"><i class="fa fa-map-marker-alt"></i> Guna, Madhya Pradesh</div>
+            <div class="detail-item"><i class="fa fa-graduation-cap"></i> B.Sc. Computer Science (Ongoing)</div>
+            <div class="detail-item"><i class="fa fa-briefcase"></i> 1 Year Experience</div>
+            <div class="detail-item"><i class="fa fa-certificate"></i> Python Certified (Feb 2026)</div>
+          </div>
+          <a href="https://github.com/rajpathak9893-commits" target="_blank" class="btn btn-primary" style="margin-top:2rem">
+            <i class="fab fa-github"></i> GitHub Profile
+          </a>
+        </div>
+        <div class="about-right">
+          <div class="about-card">
+            <div class="about-avatar">
+              <div class="avatar-letters">RP</div>
+              <div class="avatar-ring"></div>
+            </div>
+            <div class="about-badges">
+              <span class="badge"><i class="fab fa-python"></i> Python</span>
+              <span class="badge"><i class="fab fa-js"></i> JavaScript</span>
+              <span class="badge"><i class="fab fa-php"></i> PHP</span>
+              <span class="badge"><i class="fa fa-database"></i> MySQL</span>
+              <span class="badge"><i class="fab fa-git-alt"></i> Git</span>
+              <span class="badge"><i class="fa fa-code"></i> Django</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section class="skills section" id="skills">
+    <div class="container">
+      <div class="section-label">02 / Skills</div>
+      <h2 class="section-title">Tech <span class="accent">Stack</span></h2>
+      <div class="skills-grid">
+
+        <div class="skill-category">
+          <h3><i class="fa fa-server"></i> Backend</h3>
+          <div class="skill-list">
+            <div class="skill-item">
+              <div class="skill-info"><span>Python</span><span>90%</span></div>
+              <div class="skill-bar"><div class="skill-fill" style="--w:90%"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info"><span>Django</span><span>85%</span></div>
+              <div class="skill-bar"><div class="skill-fill" style="--w:85%"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info"><span>PHP</span><span>80%</span></div>
+              <div class="skill-bar"><div class="skill-fill" style="--w:80%"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info"><span>REST API</span><span>82%</span></div>
+              <div class="skill-bar"><div class="skill-fill" style="--w:82%"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <h3><i class="fa fa-paint-brush"></i> Frontend</h3>
+          <div class="skill-list">
+            <div class="skill-item">
+              <div class="skill-info"><span>HTML/CSS</span><span>92%</span></div>
+              <div class="skill-bar"><div class="skill-fill" style="--w:92%"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info"><span>JavaScript</span><span>75%</span></div>
+              <div class="skill-bar"><div class="skill-fill" style="--w:75%"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info"><span>Bootstrap</span><span>88%</span></div>
+              <div class="skill-bar"><div class="skill-fill" style="--w:88%"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info"><span>Responsive Design</span><span>90%</span></div>
+              <div class="skill-bar"><div class="skill-fill" style="--w:90%"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <h3><i class="fa fa-database"></i> Database & Tools</h3>
+          <div class="skill-list">
+            <div class="skill-item">
+              <div class="skill-info"><span>MySQL</span><span>85%</span></div>
+              <div class="skill-bar"><div class="skill-fill" style="--w:85%"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info"><span>SQLite</span><span>80%</span></div>
+              <div class="skill-bar"><div class="skill-fill" style="--w:80%"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info"><span>Git / GitHub</span><span>78%</span></div>
+              <div class="skill-bar"><div class="skill-fill" style="--w:78%"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info"><span>VS Code</span><span>95%</span></div>
+              <div class="skill-bar"><div class="skill-fill" style="--w:95%"></div></div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section class="projects section" id="projects">
+    <div class="container">
+      <div class="section-label">03 / Projects</div>
+      <h2 class="section-title">My <span class="accent">Work</span></h2>
+      <div class="projects-grid">
+
+        <div class="project-card featured">
+          <div class="project-tag">Featured</div>
+          <div class="project-icon"><i class="fa fa-shopping-cart"></i></div>
+          <h3>E-Commerce Website</h3>
+          <p>Full-stack Django e-commerce platform with user authentication, cart, wishlist, checkout & Razorpay payment gateway. Fully responsive.</p>
+          <div class="project-tech">
+            <span>Django</span><span>Python</span><span>MySQL</span><span>Razorpay</span><span>Bootstrap</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/rajpathak9893-commits" target="_blank" class="proj-btn"><i class="fab fa-github"></i> Code</a>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-icon"><i class="fa fa-briefcase"></i></div>
+          <h3>Job Portal Website</h3>
+          <p>Live job portal web application with dynamic listings, search functionality, and admin controls. Currently deployed and accessible online.</p>
+          <div class="project-tech">
+            <span>PHP</span><span>MySQL</span><span>HTML/CSS</span><span>JS</span>
+          </div>
+          <div class="project-links">
+            <a href="https://newjobportal.com/" target="_blank" class="proj-btn"><i class="fa fa-external-link-alt"></i> Live</a>
+            <a href="https://github.com/rajpathak9893-commits" target="_blank" class="proj-btn"><i class="fab fa-github"></i> Code</a>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-icon"><i class="fa fa-plug"></i></div>
+          <h3>API Integration Project</h3>
+          <p>Integrated third-party REST APIs for dynamic data fetching. Handles JSON responses, real-time data updates, and external service functionality.</p>
+          <div class="project-tech">
+            <span>REST API</span><span>Python</span><span>JSON</span><span>Django</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/rajpathak9893-commits" target="_blank" class="proj-btn"><i class="fab fa-github"></i> Code</a>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-icon"><i class="fa fa-database"></i></div>
+          <h3>PHP & MySQL Web App</h3>
+          <p>Dynamic web application with CRUD operations, form validation, admin panel, and database connectivity. Responsive layouts included.</p>
+          <div class="project-tech">
+            <span>PHP</span><span>MySQL</span><span>CRUD</span><span>Bootstrap</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/rajpathak9893-commits" target="_blank" class="proj-btn"><i class="fab fa-github"></i> Code</a>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-icon"><i class="fa fa-globe"></i></div>
+          <h3>Personal Portfolio</h3>
+          <p>This portfolio website — built with pure HTML, CSS, and JavaScript. Hosted free on GitHub Pages. Fast, responsive, and professional.</p>
+          <div class="project-tech">
+            <span>HTML</span><span>CSS</span><span>JavaScript</span><span>GitHub Pages</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/rajpathak9893-commits/raj-portfolio" target="_blank" class="proj-btn"><i class="fab fa-github"></i> Code</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section class="experience section" id="experience">
+    <div class="container">
+      <div class="section-label">04 / Experience</div>
+      <h2 class="section-title">My <span class="accent">Journey</span></h2>
+      <div class="timeline">
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <h3>Web Developer</h3>
+              <span class="timeline-company">Job Linker — Guna, MP</span>
+            </div>
+            <div class="timeline-period"><i class="fa fa-calendar"></i> April 2025 – May 2026 · Part-time</div>
+            <ul class="timeline-points">
+              <li>Developed & maintained responsive web applications and dynamic websites</li>
+              <li>Designed user interfaces using HTML, CSS, Bootstrap, and JavaScript</li>
+              <li>Backend development with PHP, MySQL, and Django framework</li>
+              <li>Integrated REST APIs and Razorpay payment gateway</li>
+              <li>Managed website deployment, database ops, and bug fixing</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot edu"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <h3>B.Sc. Computer Science</h3>
+              <span class="timeline-company">Krantiveer Tatya Tope University — India</span>
+            </div>
+            <div class="timeline-period"><i class="fa fa-calendar"></i> June 2025 – Present</div>
+            <ul class="timeline-points">
+              <li>Currently pursuing Computer Science degree</li>
+              <li>Applying academic knowledge to real-world projects simultaneously</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot cert"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <h3>Python Programming Certificate</h3>
+              <span class="timeline-company">Certification Course</span>
+            </div>
+            <div class="timeline-period"><i class="fa fa-calendar"></i> February 2026 – Present</div>
+            <ul class="timeline-points">
+              <li>Completed certified Python programming course</li>
+              <li>Covered core Python, OOP, data structures, and web applications</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact section" id="contact">
+    <div class="container">
+      <div class="section-label">05 / Contact</div>
+      <h2 class="section-title">Let's <span class="accent">Work Together</span></h2>
+      <p class="contact-sub">I'm currently open to new opportunities. Whether you have a project in mind or just want to say hi — my inbox is always open!</p>
+      <div class="contact-grid">
+        <div class="contact-info">
+          <a href="mailto:rajpathak9893@gmail.com" class="contact-item">
+            <div class="contact-icon"><i class="fa fa-envelope"></i></div>
+            <div>
+              <span class="contact-label">Email</span>
+              <span class="contact-val">rajpathak9893@gmail.com</span>
+            </div>
+          </a>
+          <a href="tel:+918253027335" class="contact-item">
+            <div class="contact-icon"><i class="fa fa-phone"></i></div>
+            <div>
+              <span class="contact-label">Phone</span>
+              <span class="contact-val">+91 82530 27335</span>
+            </div>
+          </a>
+          <a href="https://github.com/rajpathak9893-commits" target="_blank" class="contact-item">
+            <div class="contact-icon"><i class="fab fa-github"></i></div>
+            <div>
+              <span class="contact-label">GitHub</span>
+              <span class="contact-val">rajpathak9893-commits</span>
+            </div>
+          </a>
+          <div class="contact-item no-link">
+            <div class="contact-icon"><i class="fa fa-map-marker-alt"></i></div>
+            <div>
+              <span class="contact-label">Location</span>
+              <span class="contact-val">Guna, Madhya Pradesh 473001</span>
+            </div>
+          </div>
+        </div>
+        <div class="contact-cta">
+          <div class="cta-card">
+            <h3>Ready to build something great?</h3>
+            <p>Available for freelance projects, full-time roles, and internships.</p>
+            <a href="mailto:rajpathak9893@gmail.com" class="btn btn-primary btn-lg">
+              <i class="fa fa-paper-plane"></i> Send Me a Message
+            </a>
+            <a href="https://newjobportal.com/" target="_blank" class="btn btn-outline" style="margin-top:1rem">
+              <i class="fa fa-external-link-alt"></i> View Live Project
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-logo">RP<span class="dot">.</span></div>
+        <div class="footer-links">
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+        </div>
+        <div class="footer-social">
+          <a href="https://github.com/rajpathak9893-commits" target="_blank"><i class="fab fa-github"></i></a>
+          <a href="mailto:rajpathak9893@gmail.com"><i class="fa fa-envelope"></i></a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>Designed & Developed by <strong>Raj Pathak</strong> · Hosted on GitHub Pages</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
